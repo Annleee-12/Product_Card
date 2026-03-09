@@ -1,5 +1,5 @@
 # Product Card Design with Hover Effect using CSS
-## Date:
+## Date:09.03.26
 
 ## AIM:
 To design a Product Card for an E-commerce website using HTML and CSS and apply hover effects, transitions, and styling techniques to create an interactive user interface.
@@ -61,8 +61,110 @@ Style the footer using background color and center alignment.
 Test your webpage in a browser.
 
 ## PROGRAM:
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Card</title>
+    <style>
+        body{
+            background-color: #eee;
+            font-family: Arial;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card{
+            width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 50px auto;
+            box-shadow: 2px 2px 10px grey;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-5px);
+            box-shadow: 4px 4px 20px grey;
+        }
+
+        .card img{
+            width: 100%;
+            height: 230px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover img{
+            transform: scale(1.05);
+        }
+
+        h2{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 14px;
+            color: grey;
+            padding: 0 10px;
+        }
+
+        .price{
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }
+
+        button{
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 14px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .card:hover button{
+            background-color: darkgreen;
+        }
+
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Our Products</h1>
+
+    <div class="card">
+        <img src="c:\Users\acer\Downloads\watch.jpg" alt="watch">
+        <h2>Smart Watch</h2>
+        <p>Stylish smartwatch with health tracking and long battery life.</p>
+        <p class="price">500</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <footer>
+        <p>Name: ANNLEE AGHAI DAVIDSON</p>
+        <p>Register Number: 25001177</p>
+    </footer>
+
+</body>
+</html>
+```
 
 ## OUTPUT:
+<img width="1920" height="1080" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/77f72211-3189-4921-990e-04736652a49b" />
+
 
 ## RESULT:
 The Product Card with Hover Effect was successfully designed using HTML and CSS.
